@@ -56,10 +56,12 @@ header div.logo {
 }
 
 header div.busqueda {
-    width: 170px;
+    width: 200px;
     margin-left: 15px;
     margin-bottom: 9px;
+    display: inline-block;
 }
+
 
 header p{
     text-align: center;
@@ -85,9 +87,44 @@ header div.burger-menu{
 
 }
 
+.navbar {
+    display: none;
+}
+
 /* Estilos de secciones */
 
+main.home__productos {
+    margin : 0 auto;
+    width: 90%;
 
+}
+
+main.home__productos article.seccion__productos--tarjeta {
+    margin: 5px 0;
+}
+
+main.home__productos article.seccion__productos--tarjeta div.caja_logo{
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    background-color: white;
+    margin: 0;
+}
+
+.verde{
+    color: var(--verde);
+    margin-bottom: 10px;
+}
+
+.fa-truck{
+    border: 1px solid var(--verde);
+    border-radius: 100%;
+    padding: 5px;
+
+}
+
+.descripcion {
+    display: none;
+}
 
 /* Estilos de productos */
 
@@ -112,3 +149,28 @@ footer article i{
     margin-bottom: 10px;
 }
 
+/* queries */
+
+@media screen and (min-width: 361px) {
+    .descripcion{
+        display: block;
+    }
+    main.home__productos article.seccion__productos--tarjeta{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .navbar {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .descripcion{
+        display: block;
+    }
+    main.home__productos article.seccion__productos--tarjeta {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .narbar {
+        display: block;
+    }
+}
